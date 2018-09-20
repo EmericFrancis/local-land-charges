@@ -72,3 +72,99 @@
 .search-fee tbody tr:nth-child(2n+2) {
   background-color: #F8F8F8;
 }
+
+//full screen map
+
+#full-screen-map-container {
+  position: relative;
+}
+
+.full-screen-map-wrapper {
+  display: table;
+  width: 100%;
+}
+
+.full-screen-map-sidebar {
+  z-index: 1;
+  width: 26.2%;
+  padding: 0 2vw;
+  background: white;
+  box-shadow: 5px 0px 3px -2px #DEE0E2;
+}
+
+#full-screen-map-sidebar, .two-thirds-map {
+  height: calc(94vh - 106px);
+  float: left;
+  position: relative;
+}
+
+.two-thirds-map {
+  width: 69%;
+}
+
+//search bar
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  height: 38px;
+  max-width: 90vw;
+}
+
+.search-button {
+    height: 40px;
+    width: 38px;
+    cursor: pointer;
+    background: #0b0c0c url(../images/search-button.png) no-repeat 2px 50%;
+    border: 0;
+    border-radius: 0;
+}
+
+.search-button:focus {
+    outline: 3px solid #ffbf47;
+    outline-offset: 0;
+}
+
+.search-warning-inset-text {
+  font-family: "nta", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0b0c0c;
+  padding: 16px 12.632px 12.632px 12.632px;
+  clear: both;
+  background-color: rgba(223, 48, 52, 0.1);
+  border-left: 10px solid #DF3034;
+}
+
+//search Footer
+
+.search-footer {
+  font-family: "nta", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-top: 1px solid #a1acb2;
+  color: #454a4c;
+  background: #dee0e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-footer-list li
+{
+   display:block;
+   float:left;
+   padding-right: 15px;
+}
+
+.search-footer-list a {
+  color: #454a4c;
+  font-size: 16px;
+}
+
+.search-footer-list a:visited {
+  color: #454a4c;
+}
