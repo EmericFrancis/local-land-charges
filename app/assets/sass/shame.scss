@@ -1,0 +1,74 @@
+.header_link_right {
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.warning-inset-text {
+  font-family: "nta", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  padding: 15px;
+  margin-top: -28px;
+  margin-bottom: 20px;
+  clear: both;
+  background-color: rgba(223, 48, 52, 0.1);
+  border-left: 10px solid #DF3034;
+}
+
+
+//search fee table
+.search-fee {
+  border: 1px solid #DEE0E2;
+  border-collapse: collapse;
+}
+
+.search-fee thead {
+}
+
+.search-fee td {
+  padding-left: 10px;
+  border: 1px solid #DEE0E2;
+  vertical-align: top;
+}
+
+.search-fee th {
+  font-size: 19px;
+  font-weight: bold;
+  text-align: left;
+  border: 1px solid #DEE0E2;
+  background-color: #BFC1C3;
+  padding-left: 10px;
+}
+
+.search-fee-title {
+  width: 380px;
+  height: 95px;
+
+}
+
+.search-fee-title-price {
+  width: 100px;
+  height: 95px;
+}
+
+.table-text-centre{
+  text-align: center;
+}
+
+.green-tick {
+  color: green;
+}
+
+.search-fee-color {
+  background-color: #F8F8F8;
+}
+
+.search-fee tbody tr:nth-child(2n+2) {
+  background-color: #F8F8F8;
+}
