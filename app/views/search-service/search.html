@@ -56,6 +56,22 @@ h{% extends "layout.html" %}
 {% endblock %}
 
 {% block main %}
+
+<script>
+
+  function checkSearchForm () {
+    var searchTerm = document.getElementById('search').value
+
+    if (searchTerm.length > 0) {
+      // Could use checkPostcode() function here in future to route people accordingly
+      return
+    } else {
+      document.getElementById('error-panel').classList.remove('govuk-visually-hidden');
+      return false
+    }
+  }
+
+</script>
 <div class="govuk-width-container">
   {% from "phase-banner/macro.njk" import govukPhaseBanner %}
   {{ govukPhaseBanner({
@@ -66,22 +82,41 @@ h{% extends "layout.html" %}
   }) }}
 </div>
 <div id="full-screen-map-container" class="full-screen-map-wrapper">
+
   <div id="full-screen-map-sidebar" class="full-screen-map-sidebar">
+
+    <div class="govuk-error-summary govuk-!-margin-top-4 govuk-visually-hidden" id="error-panel" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+      <h2 class="govuk-error-summary__title" id="error-summary-title">
+        There are errors on this page
+      </h2>
+      <div class="govuk-error-summary__body">
+        <ul class="govuk-list govuk-error-summary__list">
+          <li>
+            <a href="#dob-error">Enter a postcode or location</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="search-warning-inset-text govuk-!-margin-top-3 govuk-!-margin-bottom-3">
       Before you start
       <a href="https://search-local-land-charges.service.gov.uk/check-if-an-authority-is-migrated">check that your search area is on this register.</a>
     </div>
 
     <h1 class="govuk-heading-l govuk-!-margin-bottom-4">Search by postcode, street name or town</h1>
-    <div class="search-bar">
-      <div class="govuk-form-group">
-        <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+
+    <form action="start.html" onsubmit="return checkSearchForm()">
+      <div class="search-bar">
+        <div class="govuk-form-group">
+          <input class="govuk-input govuk-input--width-10" id="search" name="search" type="text">
+        </div>
+        <div class="search-bar-input">
+          <button type="submit" class="search-button" role="button">
+            <span class="govuk-visually-hidden">Search</span>
+          </button>
+        </div>
       </div>
-      <div class="search-bar-input">
-        <button class="search-button" role="button">
-        </button>
-      </div>
-    </div>
+    </form>
 
     <p class="govuk-body-s govuk-!-padding-top-4">You can also browse to a place using the map.</p>
 
