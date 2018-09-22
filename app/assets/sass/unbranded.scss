@@ -10,3 +10,61 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 // If you need to create a page as part of your journey, but without GOV.UK branding
 // See localhost:3000/docs/examples/blank-unbranded
+
+.main {
+  background-color: grey;
+}
+
+.unbranded-header {
+  background-color: #133046;
+  width: 100%;
+  height: 65px;
+}
+
+.unbranded-header h1 {
+  margin: 0;
+  padding-top: 13px;
+  color: white;
+}
+
+.hero-banner {
+  background: url("/public/images/front-back-large.jpg") 0 0 fixed;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #005ea5;
+  opacity: 0.9;
+  position: absolute;
+}
+
+.hero-banner h2 {
+  margin: 0px;
+  z-index: 1;
+  color: white;
+  font-size: 75px;
+}
+
+.search-service {
+  text-align: center;
+  border-style: solid;
+  height: 150px;
+}
+
+.maintain-service {
+  text-align: center;
+  border-style: solid;
+  height: 150px;
+
+  &:hover {
+    background-color: blue;
+  }
+
+}

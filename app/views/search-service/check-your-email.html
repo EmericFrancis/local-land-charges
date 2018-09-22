@@ -58,13 +58,24 @@ h{% extends "layout.html" %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    <h1 class="govuk-heading-xl">
-      {% if serviceName %} {{ serviceName }} {% endif %}
+    <h1 class="govuk-heading-l">
+      Check your email
     </h1>
 
-    <button type="submit" class="govuk-button">
-      Submit
-    </button>
+    <p class="govuk-body">
+      We've sent an email to {{data['email']}}.
+      <br>
+      Click the link in this email to create your password.
+    </p>
+
+    <p class="govuk-body">
+      Didn't get the email? Check your junk folder.
+      <br>
+      If it isn't in your junk folder, email
+      <br>
+      <a class="govuk-link" href="#">LocalLandChargesRegister@landregistry.gov.uk</a>
+    </p>
+
   </div>
 </div>
 {% endblock %}
