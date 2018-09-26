@@ -168,3 +168,111 @@
 .search-footer-list a:visited {
   color: #454a4c;
 }
+
+//search history
+
+.search-history-tabs {
+  font-family: "nta", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #DEE0E2;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.reduced-column-width {
+  width: 23%;
+  float: left;
+}
+
+.column-two-thirds {
+    float: left;
+    width: 66.66667%;
+}
+
+.search-history-table-content {
+  vertical-align: top;
+  padding-top: 0;
+}
+.search-history-table-content td {
+  width: 20%;
+}
+
+// .search-history-tabs__title {
+//   font-family: "nta", Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   font-weight: 400;
+//   font-size: 16px;
+//   font-size: 1rem;
+//   line-height: 1.25;
+//   margin-bottom: 5px;
+// }
+//
+// .search-history-tabs__list {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
+//
+// @media print {
+//   .search-history-tabs__tab {
+//     font-family: sans-serif;
+//   }
+// }
+//
+// .search-history-tabs__tab:focus {
+//   outline: 3px solid #ffbf47;
+//   outline-offset: 0;
+//   background-color: #ffbf47;
+// }
+//
+// .search-history-tabs__tab:link {
+//   color: #005ea5;
+// }
+//
+// .search-history-tabs__tab:visited {
+//   color: #4c2c92;
+// }
+//
+// .search-history-tabs__tab:hover {
+//   color: #2b8cc4;
+// }
+//
+// .search-history-tabs__tab:active {
+//   color: #2b8cc4;
+// }
+//
+// .search-history-tabs__tab:focus {
+//   color: #0b0c0c;
+// }
+//
+// @media print {
+//   .search-history-tabs__tab {
+//     font-family: sans-serif;
+//   }
+// }
+//
+// @media (min-width: 40.0625em) {
+//   .search-history-tabs__tab {
+//     font-size: 19px;
+//     font-size: 1.1875rem;
+//     line-height: 1.31579;
+//   }
+// }
+//
+// @media print {
+//   .search-history-tabs__tab {
+//     font-size: 14pt;
+//     line-height: 1.15;
+//   }
+// }
+//
+// .search-history-tabs__tab[aria-current="true"] {
+//   color: #DEE0E2;
+//   text-decoration: none;
+// }
