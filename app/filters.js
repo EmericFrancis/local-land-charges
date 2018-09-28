@@ -1,3 +1,5 @@
+var moment = require('moment')
+
 module.exports = function (env) {
   /**
    * Instantiate object used to store the methods registered as a
@@ -6,6 +8,11 @@ module.exports = function (env) {
    * @type {Object}
    */
   var filters = {}
+
+  filters.formatDate = function(format) {
+    // {{ 'D MMMM YYYY'|formatDate() }}
+    return moment().format(format)
+  }
 
   /* ------------------------------------------------------------------
     add your methods to the filters obj below this comment block:

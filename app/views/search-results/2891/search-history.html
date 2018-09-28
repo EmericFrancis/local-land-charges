@@ -1,4 +1,4 @@
-h{% extends "layout.html" %}
+{% extends "layout.html" %}
 
 {% from "table/macro.njk" import govukTable %}
 
@@ -27,7 +27,7 @@ h{% extends "layout.html" %}
       </div>
       <div class="govuk-header__content">
 
-        <a href="start.html" class="govuk-header__link govuk-header__link--service-name">
+        <a href="/../search-service/start.html" class="govuk-header__link govuk-header__link--service-name">
           Search for local land charges
         </a>
 
@@ -55,10 +55,9 @@ h{% extends "layout.html" %}
 {% endblock %}
 
 {% block content %}
-<script>
-  var dt = new Date();
-  document.getElementById("date").innerHTML = dt.toLocaleString();
-</script>
+<!-- <script>
+  document.getElementById("date").innerHTML = Date();
+</script> -->
 
     <h1 class="govuk-heading-l govuk-!-margin-top-3 govuk-!-margin-bottom-7">
       Search history
@@ -130,12 +129,11 @@ h{% extends "layout.html" %}
                   <a class="govuk-link" href="/search-results/view-2891.html">View</a>
                 </td>
                 <td class="govuk-table__cell">
-                  <span id="date">
-                  </span>
+                  <p id="date" class="govuk-body govuk-!-margin-bottom-0">{{ 'D MMMM YYYY'|formatDate() }}</p>
                   <a class="govuk-link" href="#">View</a>
                 </td>
                 <td class="govuk-table__cell "><a class="govuk-link" href="/search-results/repeat-2891.html">Repeat</a></td>
-                <td class="govuk-table__cell ">1</td>
+                <td class="govuk-table__cell ">2</td>
               </tr>
               <tr class="govuk-table__row">
                 <td class="govuk-table__cell">000 002 857</td>
@@ -157,7 +155,7 @@ h{% extends "layout.html" %}
                   <a class="govuk-link" href="#">View</a>
                 </td>
                 <td class="govuk-table__cell ">
-                  28 September 2018
+                  24 September 2018
                   <br>
                   <a class="govuk-link" href="#">View</a>
                 </td>

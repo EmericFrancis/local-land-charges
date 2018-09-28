@@ -212,6 +212,26 @@
 .tis-a-little-table td {
   text-align: right;
 }
+
+.tis-a-little-table button {
+}
+
+//
+
+.row-toggle-button {
+  position: absolute;
+    margin-top: 15px;
+    right: 15px;
+    height: 16px;
+    width: 16px;
+    background-image: url(/../../public/images/icon-plus-minus.png);
+    background-repeat: no-repeat;
+    background-position: 0 -16px;
+}
+
+.parent-row {
+  position: relative;
+}
 // .search-history-tabs__title {
 //   font-family: "nta", Arial, sans-serif;
 //   -webkit-font-smoothing: antialiased;
