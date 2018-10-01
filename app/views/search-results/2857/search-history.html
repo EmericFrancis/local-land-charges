@@ -1,4 +1,4 @@
-h{% extends "layout.html" %}
+{% extends "layout.html" %}
 
 {% from "table/macro.njk" import govukTable %}
 
@@ -27,7 +27,7 @@ h{% extends "layout.html" %}
       </div>
       <div class="govuk-header__content">
 
-        <a href="start.html" class="govuk-header__link govuk-header__link--service-name">
+        <a href="/../search-service/start.html" class="govuk-header__link govuk-header__link--service-name">
           Search for local land charges
         </a>
 
@@ -55,6 +55,9 @@ h{% extends "layout.html" %}
 {% endblock %}
 
 {% block content %}
+<!-- <script>
+  document.getElementById("date").innerHTML = Date();
+</script> -->
 
     <h1 class="govuk-heading-l govuk-!-margin-top-3 govuk-!-margin-bottom-7">
       Search history
@@ -118,36 +121,22 @@ h{% extends "layout.html" %}
               </tr>
             </thead>
             <tbody class="govuk-table__body search-history-table-content">
-              <tr class="govuk-table__row parent-row">
+              <tr class="govuk-table__row">
                 <td class="govuk-table__cell">000 002 891</td>
                 <td class="govuk-table__cell ">
                   19 September 2018
                   <br>
-                  <a class="govuk-link" href="view-2891.html">View</a>
+                  <a class="govuk-link" href="/search-results/view-2891.html">View</a>
                 </td>
                 <td class="govuk-table__cell">
-                  23 September 2018
-                  <br>
-                  <a class="govuk-link" href="view-2891">View</a>
+                  <p id="date" class="govuk-body govuk-!-margin-bottom-0">{{ 'D MMMM YYYY'|formatDate() }}</p>
+                  <a class="govuk-link" href="#">View</a>
                 </td>
-                <td class="govuk-table__cell "><a class="govuk-link" href="repeat-2891.html">Repeat</a></td>
-                <td class="govuk-table__cell repeats">
-                  1
-                  <button class="row-toggle-button"></button>
+                <td class="govuk-table__cell "><a class="govuk-link" href="/search-results/repeat-2891.html">Repeat</a></td>
+                <td class="govuk-table__cell ">2
                 </td>
               </tr>
-              <tr class="govuk-table__row govuk-visually-hidden">
-                <td class="govuk-table__cell">000 002 881</td>
-                <td class="govuk-table__cell ">
-                  19 September 2018
-                </td>
-                <td class="govuk-table__cell">
-                  <a class="govuk-link" href="view-2891.html">View</a>
-                </td>
-                <td class="govuk-table__cell"></td>
-                <td class="govuk-table__cell"></td>
-              </tr>
-              <tr class="govuk-table__row parent-row">
+              <tr class="govuk-table__row">
                 <td class="govuk-table__cell">000 002 857</td>
                 <td class="govuk-table__cell ">
                   13 September 2018
@@ -159,7 +148,7 @@ h{% extends "layout.html" %}
                 <td class="govuk-table__cell "><a class="govuk-link" href="#">Repeat</a></td>
                 <td class="govuk-table__cell ">0</td>
               </tr>
-              <tr class="govuk-table__row parent-row">
+              <tr class="govuk-table__row">
                 <td class="govuk-table__cell">000 002 843</td>
                 <td class="govuk-table__cell ">
                   17 September 2018
@@ -167,39 +156,14 @@ h{% extends "layout.html" %}
                   <a class="govuk-link" href="#">View</a>
                 </td>
                 <td class="govuk-table__cell ">
-                  28 September 2018
+                  24 September 2018
                   <br>
                   <a class="govuk-link" href="#">View</a>
                 </td>
                 <td class="govuk-table__cell "><a class="govuk-link" href="#">Repeat</a></td>
-                <td class="govuk-table__cell repeats">
-                  2
-                  <button class="row-toggle-button"></button>
-                </td>
+                <td class="govuk-table__cell ">2</td>
               </tr>
-              <tr class="govuk-table__row govuk-visually-hidden">
-                <td class="govuk-table__cell">000 002 878</td>
-                <td class="govuk-table__cell ">
-                  08 September 2018
-                </td>
-                <td class="govuk-table__cell">
-                  <a class="govuk-link" href="view-2891.html">View</a>
-                </td>
-                <td class="govuk-table__cell"></td>
-                <td class="govuk-table__cell"></td>
-              </tr>
-              <tr class="govuk-table__row govuk-visually-hidden">
-                <td class="govuk-table__cell">000 002 841</td>
-                <td class="govuk-table__cell ">
-                  23 September 2018
-                </td>
-                <td class="govuk-table__cell">
-                  <a class="govuk-link" href="view-2891.html">View</a>
-                </td>
-                <td class="govuk-table__cell"></td>
-                <td class="govuk-table__cell"></td>
-              </tr>
-              <tr class="govuk-table__row parent-row">
+              <tr class="govuk-table__row">
                 <td class="govuk-table__cell">000 002 899</td>
                 <td class="govuk-table__cell ">
                   03 September 2018
@@ -221,14 +185,12 @@ h{% extends "layout.html" %}
     </div>
 {% endblock %}
 
-
 {% block scripts %}
   {{ super() }}
   <script>
-    $('.row-toggle-button').on('click', function(e) {
-      e.preventDefault()
-      $(this).closest('tr').nextUntil('.parent-row').toggleClass('govuk-visually-hidden')
-      $(this).toggleClass('row-toggle-button-expanded')
-    })
+  $('.row-toggle-button').on('click', function(e) {
+    e.preventDefault;
+    $(this).closet('tr').nextUntil('.parent-row').toggleClass('govuk-visually-hidden')
+    $(this).toggleClass('.row-toggle-button-expanded')
+  })
   </script>
-{% endblock %}

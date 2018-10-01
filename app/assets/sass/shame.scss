@@ -219,7 +219,8 @@
 //
 
 .row-toggle-button {
-  position: absolute;
+    position: absolute;
+    border: none;
     margin-top: 15px;
     right: 15px;
     height: 16px;
@@ -229,8 +230,16 @@
     background-position: 0 -16px;
 }
 
-.parent-row {
+.row-toggle-button-expanded {
+    background-position: 0 0;
+}
+
+.repeats {
   position: relative;
+}
+
+.parent-row {
+
 }
 // .search-history-tabs__title {
 //   font-family: "nta", Arial, sans-serif;
