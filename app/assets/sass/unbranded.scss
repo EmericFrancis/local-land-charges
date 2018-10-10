@@ -12,7 +12,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 // See localhost:3000/docs/examples/blank-unbranded
 
 .main {
-  background-color: grey;
+  background-color: pink;
 }
 
 .unbranded-header {
@@ -28,7 +28,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 }
 
 .hero-banner {
-  background: url("/public/images/front-back-large.jpg") 0 0 fixed;
+  background: url("/public/images/title-plan.jpg") 0 0 fixed;
   position: relative;
   height: 300px;
   width: 100%;
@@ -40,15 +40,15 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 .color-overlay {
   width: 100%;
   height: 100%;
-  background-color: #2C8693;
-  opacity: 0.9;
+  background-color: black;
+  opacity: 0.6;
   position: absolute;
 }
 
 .hero-banner h2 {
   margin: 0px;
   z-index: 1;
-  color: #F0F1D5;
+  color: white;
   font-size: 75px;
 }
 
