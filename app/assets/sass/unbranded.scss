@@ -10,9 +10,12 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 // If you need to create a page as part of your journey, but without GOV.UK branding
 // See localhost:3000/docs/examples/blank-unbranded
+body {
+  background-color: govuk-colour("grey-4") !important;
+}
 
-.main {
-  background-color: pink;
+html {
+  background-color:	govuk-colour("grey-4") !important;
 }
 
 .unbranded-header {
@@ -25,6 +28,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   margin: 0;
   padding-top: 13px;
   color: white;
+
 }
 
 .hero-banner {
@@ -55,16 +59,73 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 .search-service {
   text-align: center;
   border-style: solid;
+  box-shadow: -3px 3px 3px govuk-colour("grey-1");
   height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: govuk-colour("grey-3");
+    box-shadow: 0px 0px 0px govuk-colour("grey-1");
+
+  }
 }
 
 .maintain-service {
   text-align: center;
   border-style: solid;
+  box-shadow: 3px 3px 3px govuk-colour("grey-1");
   height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
-    background-color: blue;
+    background-color: govuk-colour("grey-3");
+    box-shadow: 0px 0px 0px govuk-colour("grey-1");
+
   }
 
+}
+
+.search-service a span {
+  text-decoration: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
+}
+
+
+.maintain-service a span {
+  text-decoration: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
+}
+
+.list tr {
+  cursor: pointer;
+
+  &:hover {
+    background-color: govuk-colour("grey-3")
+  }
+
+}
+
+.version {
+  color: #005ea5;
+  text-decoration: underline;
+}
+
+
+
+.right {
+  text-align: right;
 }

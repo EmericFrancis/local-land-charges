@@ -4,11 +4,6 @@
   Prototype - Local Land Charges
 {% endblock %}
 
-{% block beforeContent %}
-{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
-
-{% endblock %}
-
 {% block header %}
 <header class="unbranded-header">
   <div class="govuk-width-container">
@@ -17,35 +12,38 @@
 </header>
 {% endblock %}
 
+<!-- {% block beforeContent %}
+{{ super() }}
+<div class="hero-banner">
+  <h2 class="govuk-heading-xl">Local Land Charges</h2>
+  <div class="color-overlay"></div>
+</div>
+{% endblock %} -->
+
 {% block main %}
+<div class="hero-banner">
+  <h2 class="govuk-heading-xl">Local Land Charges</h2>
+  <div class="color-overlay"></div>
+</div>
 
-  <div class="hero-banner">
-    <h2 class="govuk-heading-xl">Local Land Charges</h2>
-    <div class="color-overlay"></div>
-  </div>
+<div class="govuk-width-container">
+  <div class="govuk-grid-row govuk-!-margin-top-5">
 
-  <div class="govuk-width-container">
-    <div class="govuk-grid-row govuk-!-margin-top-5">
-      <div class="govuk-grid-column-one-half govuk-!-padding-0">
-        <div class="search-service govuk-!-margin-right-1 govuk-!-margin-left-3 govuk-!-padding-1">
-          <h3 class="govuk-heading-m">Search Service</h3>
-          <p class="govuk-body">
-            A public facing service on gov.uk which can search for local land charges
-            in a user selected area
-          </p>
-      </div>
-      </div>
-      <div class="govuk-grid-column-one-half govuk-!-padding-0">
-        <div class="maintain-service govuk-!-margin-left-1 govuk-!-margin-right-3 govuk-!-padding-1">
-          <h3 class="govuk-heading-m">Maintain Service</h3>
-          <p class="govuk-body">
-            A service hosted on gov.uk but not public facing it allows local authorities update
-            and add charges (maintain) to the registry
-          </p>
-        </div>
+    <div class="govuk-grid-column-one-half govuk-!-padding-0">
+      <div class="search-service govuk-!-margin-right-1 govuk-!-margin-left-3 govuk-!-padding-1">
+        <h3 class="govuk-heading-m">Search Service</h3>
+        <a href="search-service.html"><span></span></a>
       </div>
     </div>
+
+    <div class="govuk-grid-column-one-half govuk-!-padding-0">
+      <div class="maintain-service govuk-!-margin-left-1 govuk-!-margin-right-3 govuk-!-padding-1">
+        <h3 class="govuk-heading-m">Maintain Service</h3>
+      </div>
+    </div>
+
   </div>
+</div>
 
 
 {% endblock %}
