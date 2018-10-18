@@ -1,9 +1,10 @@
-h{% extends "layout.html" %}
+{% extends "layout.html" %}
 
 {% from "table/macro.njk" import govukTable %}
 
 {% block pageTitle %}
-  Start page example
+Search by postcode, street name or town
+Search for land charges Find map location by postcode
 {% endblock %}
 
 {% block header %}
@@ -56,22 +57,6 @@ h{% extends "layout.html" %}
 {% endblock %}
 
 {% block main %}
-
-<script>
-
-  function checkSearchForm () {
-    var searchTerm = document.getElementById('search').value
-
-    if (searchTerm.length > 0) {
-      // Could use checkPostcode() function here in future to route people accordingly
-      return
-    } else {
-      document.getElementById('error-panel').classList.remove('govuk-visually-hidden');
-      return false
-    }
-  }
-
-</script>
 <div class="govuk-width-container">
   {% from "phase-banner/macro.njk" import govukPhaseBanner %}
   {{ govukPhaseBanner({
@@ -85,52 +70,29 @@ h{% extends "layout.html" %}
 
   <div id="full-screen-map-sidebar" class="full-screen-map-sidebar">
 
-    <div class="govuk-error-summary govuk-!-margin-top-4 govuk-visually-hidden" id="error-panel" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
-      <h2 class="govuk-error-summary__title" id="error-summary-title">
-        There are errors on this page
-      </h2>
-      <div class="govuk-error-summary__body">
-        <ul class="govuk-list govuk-error-summary__list">
-          <li>
-            <a href="#dob-error">Enter a postcode or location</a>
-          </li>
-        </ul>
-      </div>
+    <h2 class="govuk-heading-s govuk-!-margin-top-3">This is the map for 13 Okehampton Place, Exeter EX4 1AY</h2>
+
+    <div class="notice">
+      <img src="/../../public/images/icon-information.png" width="25px" height="25px">
+      <p class="govuk-body-s govuk-!-margin-left-6">
+        Use the map buttons to draw an extent around the area you want to search.
+      </p>
     </div>
 
-    <div class="search-warning-inset-text govuk-!-margin-top-3 govuk-!-margin-bottom-3">
-      Before you start
-      <a href="https://search-local-land-charges.service.gov.uk/check-if-an-authority-is-migrated">check that your search area is on this register.</a>
-    </div>
+    <p class="govuk-body-s govuk-!-margin-top-3"><a href="#">How to use the map</a>(link opens in new tab)</p>
 
-    <h1 class="govuk-heading-l govuk-!-margin-bottom-4">Search by postcode, street name or town</h1>
-
-    <form action="search1.html" onsubmit="return checkSearchForm()">
-      <div class="search-bar">
-        <div class="govuk-form-group">
-          <input class="govuk-input govuk-input--width-10" id="search" name="search" type="text">
-        </div>
-        <div class="search-bar-input">
-          <button type="submit" class="search-button" role="button">
-            <span class="govuk-visually-hidden">Search</span>
-          </button>
-        </div>
-      </div>
-    </form>
-
-    <p class="govuk-body-s govuk-!-padding-top-4">You can also browse to a place using the map.</p>
-
-    <p class="govuk-body-s"><a href="#">How to use the map</a>(link opens in new tab)</p>
-
-    <button type="submit" disabled="disabled" aria-disabled="true" class="govuk-button govuk-button--disabled">
+    <form action="confirmation.html">
+    <button type="submit" class="govuk-button">
       Search this area
     </button>
+    </form>
 
+    <a class="govuk-link" href="/live/current/search.html">Start a new search</a>
 
   </div>
 
   <div id="map" class="two-thirds-map">
-    <img src="../../public/images/map.png" width="100%" height="100%">
+    <img src="/../../public/images/search-areas/13-okehampton-place.png" width="100%" height="100%">
   </div>
 
 </div>

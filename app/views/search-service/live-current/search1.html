@@ -1,9 +1,10 @@
-h{% extends "layout.html" %}
+{% extends "layout.html" %}
 
 {% from "table/macro.njk" import govukTable %}
 
 {% block pageTitle %}
-  Start page example
+Search by postcode, street name or town
+Search for land charges Find map location by postcode
 {% endblock %}
 
 {% block header %}
@@ -105,7 +106,7 @@ h{% extends "layout.html" %}
 
     <h1 class="govuk-heading-l govuk-!-margin-bottom-4">Search by postcode, street name or town</h1>
 
-    <form action="search1.html" onsubmit="return checkSearchForm()">
+    <form action="start.html" onsubmit="return checkSearchForm()">
       <div class="search-bar">
         <div class="govuk-form-group">
           <input class="govuk-input govuk-input--width-10" id="search" name="search" type="text">
@@ -118,9 +119,59 @@ h{% extends "layout.html" %}
       </div>
     </form>
 
-    <p class="govuk-body-s govuk-!-padding-top-4">You can also browse to a place using the map.</p>
+    <h2 class="govuk-heading-s govuk-!-margin-top-5 govuk-!-margin-bottom-2">You can:</h2>
+    <ul class="govuk-list govuk-list--bullet govuk-!-font-size-16">
+      <li>Draw your search area <span class="govuk-!-font-weight-bold">or</span></li>
+      <li>choose an address from the list</li>
+    </ul>
 
-    <p class="govuk-body-s"><a href="#">How to use the map</a>(link opens in new tab)</p>
+    <div class="address">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">1 Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">2 Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">3 Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">4 Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">5 Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">6 Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">7 Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">Network Rail, 8a Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">9 Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">10 Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">11 Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">12 Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">13 Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-!-font-size-16" href="search-areas/13-okehampton-place/area-selection.html">14 Okehampton Place, Exeter EX4 1AY</a>
+        </li>
+    </div>
+
+    <p class="govuk-body-s govuk-!-margin-top-3"><a href="#">How to use the map</a>(link opens in new tab)</p>
 
     <button type="submit" disabled="disabled" aria-disabled="true" class="govuk-button govuk-button--disabled">
       Search this area
