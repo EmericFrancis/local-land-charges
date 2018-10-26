@@ -57,51 +57,16 @@
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-l">Confirm your payment</h1>
-    <table class="govuk-table">
-      <tbody class="govuk-table__body">
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header govuk-!-font-weight-regular govuk-!-padding-bottom-3 govuk-!-padding-top-3 govuk-!-width-one-third">Card number:</th>
-          <td class="govuk-table__cell govuk-!-font-weight-bold">{{ data['card-number'] }}</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header govuk-!-font-weight-regular govuk-!-padding-bottom-3 govuk-!-padding-top-3 govuk-!-width-one-third">Expiry date:</th>
-          <td class="govuk-table__cell govuk-!-font-weight-bold">{{ data['expiry-month'] }}/{{ data['expiry-year'] }}</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header govuk-!-font-weight-regular govuk-!-padding-bottom-3 govuk-!-padding-top-3 govuk-!-width-one-third">Name on card:</th>
-          <td class="govuk-table__cell govuk-!-font-weight-bold">{{ data['card-name']}}</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header govuk-!-font-weight-regular govuk-!-padding-bottom-3 govuk-!-padding-top-3 govuk-!-width-one-third">Billing address:</th>
-          <td class="govuk-table__cell govuk-!-font-weight-bold">{{ data['address-1'] }} {{ data['address-2'] }}, {{ data['address-town-city'] }}, {{ data['address-postcode'] }}, {{ data['address-country'] }}</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <th class="govuk-table__header govuk-!-font-weight-regular govuk-!-padding-bottom-3 govuk-!-padding-top-3 govuk-!-width-one-third">confirmation email:</th>
-          <td class="govuk-table__cell govuk-!-font-weight-bold">{{ data['card-email'] }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <h1 class="govuk-heading-l">Your payment has been cancelled</h1>
 
-    <form action="gov-pay3.html">
+    <p class="govuk-body">No money has been taken from your account.</p>
+
+    <form action="search-areas/13-okehampton-place/search-results.html">
       <button class="govuk-button" type="submit">
-        Confirm payment
+        Go back to the service
       </button>
-
-      <p class="govuk-body"><a href="gov-pay-cancelled.html" class="govuk-link">Cancel payment</a></p>
     </form>
 
-  </div>
-  <div class="govuk-grid-column-one-third payment-summary-sticky">
-    <aside class="payment-summary">
-      <h2 class="govuk-heading-m">Payment summary</h2>
-      <p class="govuk-body govuk-!-font-weight-bold">
-        Official search result of local land charges
-      </p>
-      <p class="govuk-body govuk-!-margin-bottom-0">
-        Total amount:<br>
-        <span class="govuk-!-font-size-36 govuk-!-font-weight-bold">£15.00</span>
-    </aside>
   </div>
 </div>
 {% endblock %}
