@@ -45,6 +45,7 @@
 {% endblock %}
 
 {% block beforeContent %}
+<<<<<<< HEAD
   {% from "phase-banner/macro.njk" import govukPhaseBanner %}
   {{ govukPhaseBanner({
     tag: {
@@ -56,6 +57,18 @@
     html: 'This is a new service – your <a class="govuk-link" href="https://wh.snapsurveys.com/s.asp?k=153028289271">feedback</a> will help us to improve it.'
 >>>>>>> search
   }) }}
+=======
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  beta
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="https://wh.snapsurveys.com/s.asp?k=153028289271">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+>>>>>>> search
 {% endblock %}
 
 {% block content %}
