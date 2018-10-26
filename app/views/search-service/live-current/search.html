@@ -3,7 +3,7 @@ h{% extends "layout.html" %}
 {% from "table/macro.njk" import govukTable %}
 
 {% block pageTitle %}
-  Start page example
+  Search by postcode, street name or town
 {% endblock %}
 
 {% block header %}
@@ -50,7 +50,7 @@ h{% extends "layout.html" %}
     tag: {
       text: "beta"
     },
-    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+    html: 'This is a new service – your <a class="govuk-link" href="https://wh.snapsurveys.com/s.asp?k=153028289271">feedback</a> will help us to improve it.'
   }) }}
 
 {% endblock %}
@@ -78,7 +78,7 @@ h{% extends "layout.html" %}
     tag: {
       text: "beta"
     },
-    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+    html: 'This is a new service – your <a class="govuk-link" href="https://wh.snapsurveys.com/s.asp?k=153028289271">feedback</a> will help us to improve it.'
   }) }}
 </div>
 <div id="full-screen-map-container" class="full-screen-map-wrapper">
@@ -120,7 +120,7 @@ h{% extends "layout.html" %}
 
     <p class="govuk-body-s govuk-!-padding-top-4">You can also browse to a place using the map.</p>
 
-    <p class="govuk-body-s"><a href="#">How to use the map</a>(link opens in new tab)</p>
+    <p class="govuk-body-s"><a href="https://preview.search-llc.landregistry.gov.uk/how-to-use-the-map" target="_blank">How to use the map</a>(link opens in new tab)</p>
 
     <button type="submit" disabled="disabled" aria-disabled="true" class="govuk-button govuk-button--disabled">
       Search this area
