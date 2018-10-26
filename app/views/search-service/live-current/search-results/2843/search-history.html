@@ -163,38 +163,66 @@ h{% extends "layout.html" %}
                 <td class="govuk-table__cell ">
                   13 September 2018
                   <br>
-                  <a class="govuk-link" href="search-results/2857/view-nr.html">View</a>
+                  <a class="govuk-link" href="view-r.html">View</a>
                 </td>
                 <td class="govuk-table__cell ">
+                  {{ 'D MMMM YYYY'|formatDate() }}
+                  <br>
+                  <a class="govuk-link" href="view-r.html">View</a>
                 </td>
                 <td class="govuk-table__cell "><a class="govuk-link" href="search-results/2857/repeat.html">Repeat</a></td>
-                <td class="govuk-table__cell ">0</td>
+                <td class="govuk-table__cell repeats">
+                  1
+                  <button class="row-toggle-button"></button>
+                </td>
+              </tr>
+              <tr class="govuk-table__row govuk-visually-hidden">
+                <td class="govuk-table__cell">000 002 847</td>
+                <td class="govuk-table__cell ">
+                  {{ 'D MMMM YYYY'|formatDate() }}
+                </td>
+                <td class="govuk-table__cell">
+                  <a class="govuk-link" href="view-r.html">View</a>
+                </td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell"></td>
               </tr>
               <tr class="govuk-table__row parent-row">
                 <td class="govuk-table__cell">000 002 843</td>
                 <td class="govuk-table__cell ">
                   17 September 2018
                   <br>
-                  <a class="govuk-link" href="search-results/2843/view-nr.html">View</a>
+                  <a class="govuk-link" href="view-r.html">View</a>
                 </td>
                 <td class="govuk-table__cell ">
-                  28 September 2018
+                  {{ 'D MMMM YYYY'|formatDate() }}
                   <br>
-                  <a class="govuk-link" href="c">View</a>
+                  <a class="govuk-link" href="view-r.html">View</a>
                 </td>
-                <td class="govuk-table__cell "><a class="govuk-link" href="search-results/2843/repeat.html">Repeat</a></td>
+                <td class="govuk-table__cell "><a class="govuk-link" href="#">Repeat</a></td>
                 <td class="govuk-table__cell repeats">
-                  2
+                  3
                   <button class="row-toggle-button"></button>
                 </td>
               </tr>
               <tr class="govuk-table__row govuk-visually-hidden">
                 <td class="govuk-table__cell">000 002 878</td>
                 <td class="govuk-table__cell ">
-                  08 September 2018
+                  {{ 'D MMMM YYYY'|formatDate() }}
                 </td>
                 <td class="govuk-table__cell">
-                  <a class="govuk-link" href="search-results/2843/view-nr.html">View</a>
+                  <a class="govuk-link" href="view-r.html">View</a>
+                </td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row govuk-visually-hidden">
+                <td class="govuk-table__cell">000 002 847</td>
+                <td class="govuk-table__cell ">
+                  23 September 2018
+                </td>
+                <td class="govuk-table__cell">
+                  <a class="govuk-link" href="view-r.html">View</a>
                 </td>
                 <td class="govuk-table__cell"></td>
                 <td class="govuk-table__cell"></td>
@@ -202,10 +230,10 @@ h{% extends "layout.html" %}
               <tr class="govuk-table__row govuk-visually-hidden">
                 <td class="govuk-table__cell">000 002 841</td>
                 <td class="govuk-table__cell ">
-                  23 September 2018
+                  08 September 2018
                 </td>
                 <td class="govuk-table__cell">
-                  <a class="govuk-link" href="search-results/2843/view-nr.html">View</a>
+                  <a class="govuk-link" href="view-r.html">View</a>
                 </td>
                 <td class="govuk-table__cell"></td>
                 <td class="govuk-table__cell"></td>
