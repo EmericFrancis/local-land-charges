@@ -14,6 +14,11 @@ module.exports = function (env) {
     return moment().format(format)
   }
 
+  filters.dateSixMonthsFromNow = function(format) {
+    // {{ 'D MMMM YYYY'|expiryDate() }}
+    return moment().add(6, 'months').format(format)
+  }
+
   /* ------------------------------------------------------------------
     add your methods to the filters obj below this comment block:
     @example:

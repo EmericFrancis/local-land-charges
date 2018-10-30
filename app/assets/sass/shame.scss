@@ -325,3 +325,48 @@
 .top {
   vertical-align: top;
 }
+
+//UR NOVEMBER STUFF
+//search history table UR-Novemember
+
+.tr1 {
+  background-color: #f8f8f8;
+}
+
+.search-history-table td {
+  width: 20%;
+}
+
+.search-toggle-button {
+    display: inline-block;
+    border: none;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 16px;
+    width: 16px;
+    background-image: url(/../../public/images/icons-up-down.png);
+    background-repeat: no-repeat;
+    background-position: 0 -16px;
+}
+
+.search-toggle-button-expanded {
+    background-position: 0 0;
+}
+
+.searches {
+  position: relative;
+}
+
+.view-searches-button {
+  border: 0;
+  font-size: 100%;
+  text-decoration: underline;
+  color: #005ea5;
+}
+
+//download searches result page
+
+.download-table-cell {
+  vertical-align: top;
+  width: 25%;
+}
