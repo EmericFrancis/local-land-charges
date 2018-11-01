@@ -100,12 +100,12 @@ h{% extends "layout.html" %}
 
     <div class="search-warning-inset-text govuk-!-margin-top-3 govuk-!-margin-bottom-3">
       Before you start
-      <a href="https://search-local-land-charges.service.gov.uk/check-if-an-authority-is-migrated">check that your search area is on this register.</a>
+      <a href="check-migration.html">check that your search area is on this register.</a>
     </div>
 
     <h1 class="govuk-heading-l govuk-!-margin-bottom-4">Search by title number</h1>
 
-    <form action="search-areas/13-okehampton-place/area-selection.html" onsubmit="return checkSearchForm()">
+    <form action="search-areas/13-okehampton-place/area-selection-title-number.html" onsubmit="return checkSearchForm()">
       <div class="search-bar">
         <div class="govuk-form-group">
           <input class="govuk-input govuk-input--width-10" id="search" name="search" type="text">
@@ -116,8 +116,12 @@ h{% extends "layout.html" %}
           </button>
         </div>
       </div>
-      <a class="govuk-link" href="search.html">Don't have a title number </a>
     </form>
+
+    <p class="govuk-!-margin-top-1 govuk-body-s">
+      <a class="govuk-link" href="search.html">Don't have a title number</a>
+    </p>
+
 
     <p class="govuk-body-s govuk-!-padding-top-4">You can also browse to a place using the map.</p>
 
