@@ -127,5 +127,13 @@ html {
 
 
 .right {
-  text-align: right;
+  text-align: center;
+}
+
+.completed {
+  padding: 5px;
+  border-top: 5px;
+  border-radius: 10px;
+  background-color:	#28a197;
+  color: white;
 }
