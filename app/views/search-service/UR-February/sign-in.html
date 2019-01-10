@@ -75,22 +75,33 @@ h{% extends "layout.html" %}
         <input class="govuk-input govuk-!-width-one-half" id="one-half" name="one-half" type="text">
       </div>
 
-      <div>
-        <h2  class="govuk-heading-m">Problems signing in?</h2>
-        <ul class="govuk-list">
-          <li>
-            <a class="govuk-link" href="forgot-password.html">I forgot my password</a>
-          </li>
-          <li>
-            <a class="govuk-link" href="register.html">I need to register</a>
-          </li>
-        </ul>
-      </div>
-
       <button type="submit" class="govuk-button">
         Sign in
       </button>
+
     </form>
+
+    <div>
+      <h2  class="govuk-heading-m">Problems signing in?</h2>
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="forgot-password.html">I forgot my password</a>
+        </li>
+      </ul>
+      <h2  class="govuk-heading-m">Don't have an account?</h2>
+      <p class="govuk-body govuk-!-margin-0">An account will:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>allow you to manage your search results</li>
+        <li>not be used for marketing purposes</li>
+        <li>allow us to keep in contact about system updates</li>
+      </ul>
+
+      <p class="govuk-body govuk-!-margin-bottom-1"><a href="register.html" class="govuk-link">Create an account</a></p>
+      <p class="govuk-body"><a href="search.html" class="govuk-link">Continue as guest</a></p>
+
+
+
+    </div>
 
   </div>
 </div>
